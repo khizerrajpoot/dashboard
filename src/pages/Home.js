@@ -32,7 +32,6 @@ export default function Home() {
         <h3>Contact Information</h3>
         <p>Email: contact@example.com</p>
         <p>Phone: +1 (555) 123-4567</p>
-        <p>LinkedIn: linkedin.com/in/profile</p>
       </div>
     </div>
   );
