@@ -5,7 +5,8 @@
 }
 
 body {
-  font-family: 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+  font-family: "Inter", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto,
+    sans-serif;
   background-color: #fafbfc;
   color: #2d3748;
   line-height: 1.6;
@@ -68,7 +69,7 @@ body {
   left: 0;
   height: calc(100vh - 70px);
   overflow-y: auto;
-  z-index: 900;
+  z-index: 1100; 
   transition: transform 0.3s ease;
 }
 
@@ -134,21 +135,30 @@ body {
 }
 
 .footer {
-  background: #1a202c;
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  background: #eef4ff;
   color: #a0aec0;
   padding: 24px;
   text-align: center;
-  border-top: 1px solid #2d3748;
+
+  box-shadow: rgb(34, 34, 34);
+  z-index: 1000;
 }
 
 .footer p {
+  color: black;
   margin: 0;
   font-size: 0.875rem;
+  font-family: "Inter", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto,
 }
 
 .home {
   max-width: 800px;
-  margin: 0 auto;
+  margin: auto;
+  margin-bottom: 8rem;
 }
 
 .home h2 {
@@ -195,7 +205,8 @@ body {
 
 .about {
   max-width: 900px;
-  margin: 0 auto;
+  margin: auto;
+  margin-bottom: 6rem;
 }
 
 .about h2 {
@@ -287,8 +298,8 @@ body {
 
 .contact-page {
   max-width: 800px;
-  margin: 0 auto;
-  padding: 24px;
+  margin: auto;
+  margin-bottom: 5rem;
 }
 
 .contact-header {
@@ -458,7 +469,7 @@ body {
   .sidebar {
     width: 220px;
   }
-  
+
   .content {
     margin-left: 220px;
     padding: 28px;
@@ -470,60 +481,60 @@ body {
     transform: translateX(-100%);
     position: fixed;
   }
-  
+
   .sidebar.open {
     transform: translateX(0);
   }
-  
+
   .sidebar-toggle {
     display: block;
   }
-  
+
   .content {
     margin-left: 0;
     padding: 20px;
   }
-  
+
   .home h2,
   .about h2 {
     font-size: 2rem;
   }
-  
+
   .contact-container {
     margin: 0 16px;
     padding: 24px;
   }
-  
+
   .about-content {
     grid-template-columns: 1fr;
     gap: 24px;
   }
-  
+
   .header {
     padding: 0 20px;
   }
-  
+
   .header .logo .brand-name {
     font-size: 1.375rem;
   }
-  
+
   .home-card,
   .about-section {
     padding: 24px;
   }
-  
+
   .footer {
     padding: 24px 20px;
   }
-  
+
   .contact-page {
     padding: 20px;
   }
-  
+
   .contact-header h1 {
     font-size: 2.25rem;
   }
-  
+
   .contact-methods {
     grid-template-columns: 1fr;
     gap: 20px;
